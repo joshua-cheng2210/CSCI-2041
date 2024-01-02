@@ -1,0 +1,20 @@
+type token =
+    VAR
+  | STRING of string
+  | SEMI
+  | RPAREN
+  | RCUR
+  | NUM of int
+  | LPAREN
+  | LCUR
+  | IF
+  | IDENT of string
+  | EOF
+  | ELSE
+  | ASSIGN
+val menhir_begin_marker : int
+val xv_statement : Ast.statement
+val xv_main : Ast.statement list
+val xv_list_statement_ : Ast.statement list
+val xv_expression : Ast.expression
+val menhir_end_marker : int

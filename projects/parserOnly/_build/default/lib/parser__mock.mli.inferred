@@ -1,0 +1,37 @@
+type token =
+    WITH
+  | TYPE
+  | STAR
+  | RPAREN
+  | RECURSIVE
+  | PROVE
+  | ORSIGN
+  | MATCH
+  | LPAREN
+  | LET
+  | INDUCTION
+  | IDENT of string
+  | HINT
+  | EQUAL
+  | EOF
+  | ENDCOMMENT
+  | COMMA
+  | COLON
+  | AXIOM
+  | ARROW
+val menhir_begin_marker : int
+val xv_word_options : Ast.word_options
+val xv_variant_stuffs : Ast.expression
+val xv_statement : Ast.statement
+val xv_option_word_options_ : Ast.word_options option
+val xv_option_equality_ : Ast.equality option
+val xv_option_argument_ : Ast.typedVariable option
+val xv_main : Ast.statement list
+val xv_list_variant_stuffs_ : Ast.expression list
+val xv_list_statement_ : Ast.statement list
+val xv_list_argument_ : Ast.typedVariable list
+val xv_expression_with_commas : Ast.expression
+val xv_expression : Ast.expression
+val xv_equality : Ast.equality
+val xv_argument : Ast.typedVariable
+val menhir_end_marker : int

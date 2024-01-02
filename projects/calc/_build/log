@@ -1,0 +1,6 @@
+# dune init project calc
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: "/mnt/c/Users/cheng/OneDrive/Documents/CLASSES/Fall2023/CSCI
+# 2041/calc"
+# Auto-detected concurrency: 8
